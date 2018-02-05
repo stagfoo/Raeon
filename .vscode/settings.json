@@ -1,0 +1,8 @@
+{
+  "git.ignoreLimitWarning": true,
+  "files.exclude": {
+    "__error": "Not found",
+    "src/style/docs.d.ts": true,
+    "src/demo.d.ts": true
+  }
+}
