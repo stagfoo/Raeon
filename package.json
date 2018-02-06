@@ -33,6 +33,8 @@
     "xo": "^0.18.2"
   },
   "dependencies": {
-    "fairybread": "^1.2.0"
+    "bel": "^5.1.6",
+    "fairybread": "^1.2.0",
+    "page": "^1.8.3"
   }
 }

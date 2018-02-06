@@ -1,1 +1,1 @@
-import 'style/docs';
+import 'domain/router';
