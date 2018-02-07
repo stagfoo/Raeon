@@ -3,26 +3,35 @@ const bel = require('bel');
 import Fairybread from 'fairybread';
 import RaeonComponents from 'components/soshi';
 import {
-  docBannerStyles
+  docBannerStyles,
+  docTopMenu
 } from 'style/docs';
+import { nav } from 'domain/router'
 
 //Sheets
-const globalSheet = new Fairybread('global');
+const gs = new Fairybread('global');
+gs.ensure('fonts', 'https://fonts.googleapis.com/css?family=Quicksand|Ubuntu')
 //add these styles
-docBannerStyles(globalSheet);
-
+docBannerStyles(gs);
+docTopMenu(gs)
 
 
 
 //Render
-globalSheet.render('head');
+gs.render('head');
 export function home() {
   console.log(RaeonComponents)
   return bel`
   <div id="app">
-    ${RaeonComponents.r.logo({
+    <div id="logo">
+    ${RaeonComponents.r.image({
       src: 'logo.svg'
     })}
+    ${RaeonComponents.r.menu({
+      items: nav
+    })}
+    </div>
+
   </div>
   `
 }
