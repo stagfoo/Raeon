@@ -1,13 +1,22 @@
 import colors from 'style/colors';
-import { cross } from 'style/gradient';
+import { coreGradients, cross } from 'style/gradient';
 import { base, feedback } from 'style/buttons';
-export function docBannerStyles(sheet){
+export function bodyStyles(sheet) {
   sheet.add('html,body', `
-    margin:0;
-    padding:0;
-    background: #fff;
-    font-family: 'Ubuntu', sans-serif;
-  `)
+  margin:0;
+  padding:0;
+  background: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+`)
+}
+export function docBannerStyles(sheet){
+
   sheet.add('#logo', `
     text-align: center;
     background-color: ${colors.shades.blueD2};
@@ -23,11 +32,11 @@ export function docBannerStyles(sheet){
 
 export function docTopMenu(sheet) {
   sheet.add('.menu-item', `${base()}`);
-  sheet.add('.menu-item.red-orange:hover', `background: ${cross(colors.red, colors.orangeL1)};`)
-  sheet.add('.menu-item.blue-pink:hover', `background: ${cross(colors.blue, colors.pink)};`)
-  sheet.add('.menu-item.green-cyan:hover', `background: ${cross(colors.green, colors.cyan)};`)
-  sheet.add('.menu-item.blue-cyan:hover', `background: ${cross(colors.blue, colors.cyan)};`)
-  sheet.add('.menu-item.cyan-purple:hover', `background: ${cross(colors.pink, colors.cyan)};`)
+  sheet.add('.menu-item.red-orange:hover', `background: ${coreGradients.RO}`)
+  sheet.add('.menu-item.blue-pink:hover', `background: ${coreGradients.BP}`)
+  sheet.add('.menu-item.green-cyan:hover', `background:${coreGradients.GC}`)
+  sheet.add('.menu-item.blue-cyan:hover', `background: ${coreGradients.BC}`)
+  sheet.add('.menu-item.cyan-purple:hover', `background: ${coreGradients.PC}`)
 
   sheet.add(`.menu`, `
     display:block;

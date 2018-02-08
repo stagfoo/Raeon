@@ -2,7 +2,7 @@ const page = require('page');
 const morphdom = require('morphdom');
 const app = document.getElementById('app');
 
-import { home } from 'components/pages';
+import { home, typo } from 'components/pages';
 export const nav = [
   {
     text: 'Colors',
@@ -31,6 +31,11 @@ export const nav = [
   }
 ]
 
-page(nav[0].href, morphdom(app, home()));
-page(nav[1].href, morphdom(app, home()));
+page(nav[0].href, ctx => {
+  morphdom(app, home());
+});
+page(nav[1].href, ctx => {
+  morphdom(app, typo());
+});
 
+page.start();
