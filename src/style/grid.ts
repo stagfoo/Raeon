@@ -28,6 +28,7 @@ function getWidth(width, n1, gutter, n2, n3) {
 
 
 export function grid(sheet){
+  //http://simplegrid.io/
   sheet.add('.container', container('auto'));
   sheet.add('.col-1-sm', `width: ${getWidth(width, 12, gutter, 11, 12)}`);
   sheet.add('.col-2-sm', `width: ${getWidth(width, 6, gutter, 10, 12)}`);
