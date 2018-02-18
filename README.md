@@ -1,4 +1,4 @@
-<p align="center"><img src="logo.png" height="100px" ></img></p>
+<p align="center"><img src="logo.png" height="80px" ></img></p>
 <p align="center">
   <a href="https://gitter.im/Raeon-dl/Lobby#">
   <img src="https://img.shields.io/badge/chat%20on-gitter-ff69b4.svg?style=flat-square" />
@@ -25,5 +25,3 @@ Raeon Design language built functionaly in CSS in js using <a href="https://gith
 npm install
 npm run start
 ```
-# Currently a WIP
-
