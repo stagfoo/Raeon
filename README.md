@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square" />
   </p>
  <p align="center">
-Raeon Design language built functionaly in CSS in js using <a href="https://github.com/stagfoo/fairybread">Fairybread</a>
+Raeon Design language built functionaly in javacript using <a href="https://github.com/stagfoo/fairybread">Fairybread</a>
 </p>
 
 # Design Language WIP
