@@ -1,6 +1,7 @@
 import colors from 'style/colors';
 import { coreGradients, cross } from 'style/gradient';
 import { base, feedback } from 'style/buttons';
+
 export function bodyStyles(sheet) {
   sheet.add('html,body', `
   margin:0;
@@ -15,8 +16,8 @@ export function bodyStyles(sheet) {
   font-size: 100%;
 `)
 }
-export function docBannerStyles(sheet){
 
+export function docBannerStyles(sheet){
   sheet.add('#logo', `
     text-align: center;
     background-color: ${colors.shades.blueD2};
@@ -29,7 +30,6 @@ export function docBannerStyles(sheet){
   `)
 }
 
-
 export function docTopMenu(sheet) {
   sheet.add('.menu-item', `${base()}`);
   sheet.add('.menu-item.red-orange:hover', `background: ${coreGradients.RO}`)
@@ -37,7 +37,6 @@ export function docTopMenu(sheet) {
   sheet.add('.menu-item.green-cyan:hover', `background:${coreGradients.GC}`)
   sheet.add('.menu-item.blue-cyan:hover', `background: ${coreGradients.BC}`)
   sheet.add('.menu-item.cyan-purple:hover', `background: ${coreGradients.PC}`)
-
   sheet.add(`.menu`, `
     display:block;
     margin-top: 100px;
