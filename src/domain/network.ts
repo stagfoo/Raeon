@@ -9,5 +9,5 @@ export function getCategory(callback){
     ]
   }});
  const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
- parser.parseURL(CORS_PROXY + 'http://www.pornhub.com/feed/brunette', callback)
+ parser.parseURL(CORS_PROXY + 'http://www.###.com/###', callback)
 }
