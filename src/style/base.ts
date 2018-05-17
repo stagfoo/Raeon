@@ -15,4 +15,5 @@ export default function bodyStyles(sheet) {
   top: 0;
   font-size: 100%;
 `)
+  return sheet
 }
