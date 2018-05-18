@@ -15,11 +15,44 @@ export const coreGradients = {
   PC: cross(colors.pink, colors.cyan),
 };
 
-export function gradientSheet(sheet) {
-  sheet.add('.gradient.cross.red-orange', `background: ${coreGradients.RO}`)
-  sheet.add('.gradient.cross.blue-pink', `background: ${coreGradients.BP}`)
-  sheet.add('.gradient.cross.green-cyan', `background:${coreGradients.GC}`)
-  sheet.add('.gradient.cross.blue-cyan', `background: ${coreGradients.BC}`)
-  sheet.add('.gradient.cross.pink-cyan', `background: ${coreGradients.PC}`)
-  return sheet;
+export const fadeGradients = {
+  R: fade(colors.red),
+  B: fade(colors.blue),
+  G: fade(colors.green),
+  P: fade(colors.pink),
+  O: fade(colors.orangeL1),
+  C: fade(colors.cyan),
+};
+
+
+export function backgroundGraident(type, colors){
+  if(type === 'cross') {
+    switch (colors) {
+    case 'red-orange':
+        return `background(${coreGradients.RO}`;
+    case 'blue-pink':
+        return `background(${coreGradients.BP}`;
+    case 'green-cyan':
+        return `background(${coreGradients.GC}`;
+    case 'blue-cyan':
+        return `background(${coreGradients.BC}`;
+    case 'pink-cyan':
+        return `background(${coreGradients.PC}`;
+    }
+  }
+  if(type === 'fade'){
+    switch (colors) {
+    case 'red':
+        return `background(${fadeGradients.R}`;
+    case 'blue':
+        return `background(${fadeGradients.B}`;
+    case 'green':
+        return `background(${fadeGradients.G}`;
+    case 'cyan':
+        return `background(${fadeGradients.C}`;
+    case 'pink':
+        return `background(${fadeGradients.P}`;
+    }
+  }
 }
+

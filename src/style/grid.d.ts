@@ -6,4 +6,4 @@ export declare const sizes: {
     xl: string;
 };
 export declare function container(def: any): string;
-export declare function grid(sheet: any): void;
+export declare function grid(type: any): string;

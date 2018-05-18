@@ -1,9 +1,11 @@
+
+//why?
 import colors from 'style/colors';
 import { coreGradients, cross } from 'style/gradient';
 import { base, feedback } from 'style/buttons';
 
 export default function bodyStyles(sheet) {
-  sheet.add('html,body', `
+  return `
   margin:0;
   padding:0;
   background: #fff;
@@ -14,6 +16,5 @@ export default function bodyStyles(sheet) {
   left: 0;
   top: 0;
   font-size: 100%;
-`)
-  return sheet
+ `
 }
