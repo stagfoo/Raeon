@@ -5,6 +5,7 @@
   "main": "src/registry.ts",
   "scripts": {
     "start": "webpack-dev-server --content-base dist --hot --inline --mode development",
+    "get-theme": "figma-theme FpKGFJhA3XsT0GNMVzA0Ywww --out-dir src",
     "build": "webpack --config webpack.config.js --mode production",
     "start:storybook": "cd docs; npm run start",
     "install:storybook": "cd docs; npm install",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "color": "^3.0.0",
+    "figma-theme": "^1.0.0-3",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.0.3",
     "webpack": "4.19.1",
