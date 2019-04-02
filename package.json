@@ -1,0 +1,30 @@
+{
+  "name": "raeon-design-system",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/registry.ts",
+  "scripts": {
+    "start": "webpack-dev-server --content-base dist --hot --inline --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
+    "start:storybook": "cd docs; npm run start",
+    "install:storybook": "cd docs; npm install",
+    "build:storybook": "cd docs; npm run build",
+    "remove:storybook": "cd docs; rm -rf storybook-static"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "lit-element": "^2.1.0",
+    "lit-html": "^1.0.0"
+  },
+  "devDependencies": {
+    "color": "^3.0.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.0.3",
+    "webpack": "4.19.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.3"
+  }
+}

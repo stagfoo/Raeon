@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "*": ["*"]
+    },
+    "target": "es2015",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "module": "esnext",
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src",
+    "mwc"
+  ],
+  "exclude": [
+    "docs"
+  ],
+}
