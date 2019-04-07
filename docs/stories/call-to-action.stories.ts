@@ -5,36 +5,40 @@ import { action } from '@storybook/addon-actions';
 const html = require('nanohtml');
 
 const themeOptions = {
-    'ecosystem': 'ecosystem',
     'dark': 'dark',
-    'project': 'project'
+    'light': 'light'
 }
 const emphasisOptions = {
     'primary': 'primary',
     'secondary': 'secondary',
     'text': 'text'
 }
+const gradientOptions = {
+    'poison': 'poison',
+    'peach': 'peach',
+    'apricot': 'apricot',
+    'bubblegum': 'bubblegum',
+    'sky': 'sky',
+    'night-sky': 'night-sky',
+    'toxic': 'toxic'
+}
 
-const buttonStories = storiesOf('Calls to Action', module);
+const buttonStories = storiesOf('Components', module);
 buttonStories.addDecorator(withKnobs);
 buttonStories.add('Primary Button', () => {
     // Side toggles
     const toggles = {
-        theme: select('theme', themeOptions, 'ecosystem'),
+        theme: select('theme', themeOptions, 'light'),
         label: text('Label text', 'Hello World'),
-        icon: text('Icon', 'star'),
-        disabled: toggle(boolean('disabled', false), 'disabled'),
+        color:select('color', gradientOptions, 'poison'),
         emphasis: select('emphasis', emphasisOptions, 'primary'),
-        onclick: action('click'),
-        onmouseover: action('mouseover'),
     }
     return html`
     <div>
     ${exampleFrame({
-        tagName: 'raeon-button',
-        title: 'Button with icon',
+        title: 'Button',
         tag: html`
-        <r-button>
+        <r-button color="${toggles.color}">
             ${toggles.label}
         </r-button>
        `,

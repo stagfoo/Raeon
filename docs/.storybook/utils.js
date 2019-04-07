@@ -15,15 +15,15 @@ export function bindEvent(tag, type){
 export function toggle(check, attr) {
   return check ? attr : '';
 }
-export function exampleFrame({tagName, title, tag, cardClass}){
+export function exampleFrame({title, tag, cardClass}){
   const codeExample = html`<div>${tag}</div>`.innerHTML;
   const codeBlock = html`<code>${codeExample}</code>`
   window['hljs'].highlightBlock(codeBlock);
   return html`
      <div>
   <header>
-    <small>${tagName}</small>
     <h1>${title}</h1>
+    <!-- Add Description -->
   </header>
   <div class="card ${cardClass}">
       ${tag}

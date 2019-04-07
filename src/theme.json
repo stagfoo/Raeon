@@ -1,8 +1,115 @@
 {
-  "colors": {},
-  "textStyles": {},
-  "fonts": [],
-  "fontSizes": [],
-  "fontWeights": [],
-  "lineHeights": []
+  "colors": {
+    "pink-d1": "#ba00b6",
+    "magenta-d1": "#ad005e",
+    "yellow-d1": "#cca31b",
+    "blue-d1": "#1e20b3",
+    "purple-d1": "#5100c2",
+    "cyan-d1": "#00c2ba",
+    "green-d1": "#639932",
+    "orange-d1": "#db6109",
+    "pink": "#ff05fa",
+    "magenta": "#ff008a",
+    "yellow": "#fdca21",
+    "blue": "#2b2dfe",
+    "purple": "#6a00fd",
+    "green": "#85cf42",
+    "cyan": "#00fbf1",
+    "orange": "#fa6f0a",
+    "pink-l1": "#ff61fc",
+    "green-l1": "#9bf44a",
+    "yellow-l1": "#fad352",
+    "purple-l1": "#964aff",
+    "blue-l1": "#4a67ff",
+    "cyan-l1": "#80fffa",
+    "orange-l1": "#fa8c0a",
+    "pink-l2": "#ffbdf7",
+    "magenta-l2": "#ff94ce",
+    "orange-l2": "#ffaf75",
+    "yellow-l2": "#fadf88",
+    "green-l2": "#baff75",
+    "cyan-l2": "#a8ffff",
+    "blue-l2": "#8a9cff",
+    "purple-l2": "#b47dff",
+    "poison": [
+      "#2b2dfe",
+      "#ff05fa"
+    ],
+    "peach": [
+      "#ff05fa",
+      "#fdca21"
+    ],
+    "apricot": [
+      "#ff008a",
+      "#fdca21"
+    ],
+    "bubblegum": [
+      "#ff05fa",
+      "#00fbf1"
+    ],
+    "night-sky": [
+      "#08080a",
+      "#222278"
+    ],
+    "toxic": [
+      "#9bf44a",
+      "#01fafc"
+    ],
+    "sky": [
+      "#2b2dfe",
+      "#01fafc"
+    ],
+    "white": "#ffffff",
+    "black": "#121252"
+  },
+  "textStyles": {
+    "h1": {
+      "fontFamily": "Quicksand",
+      "fontWeight": 700,
+      "fontSize": 30,
+      "lineHeight": 1
+    },
+    "h2": {
+      "fontFamily": "Quicksand",
+      "fontWeight": 700,
+      "fontSize": 24,
+      "lineHeight": 1
+    },
+    "h3": {
+      "fontFamily": "Quicksand",
+      "fontWeight": 400,
+      "fontSize": 20,
+      "lineHeight": 1
+    },
+    "body": {
+      "fontFamily": "Ubuntu",
+      "fontWeight": 400,
+      "fontSize": 16,
+      "lineHeight": 1.05
+    },
+    "button": {
+      "fontFamily": "Quicksand",
+      "fontWeight": 700,
+      "fontSize": 20,
+      "lineHeight": 1
+    }
+  },
+  "fonts": [
+    "Quicksand",
+    "Ubuntu"
+  ],
+  "fontSizes": [
+    16,
+    20,
+    24,
+    30
+  ],
+  "fontWeights": [
+    400,
+    700
+  ],
+  "lineHeights": [
+    1,
+    1.05
+  ]
 }

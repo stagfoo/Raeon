@@ -1,3 +1,4 @@
 import { storiesOf } from '@storybook/html';
-storiesOf('Welcome', module)
-  .add('heading', () => '<h1>Hello World</h1>')
+storiesOf('Design System', module)
+  .add('Colors', () => '<h1>Hello World</h1>')
+  .add('Type', () => '<h1>Hello World</h1>')

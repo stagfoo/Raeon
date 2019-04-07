@@ -1,21 +1,22 @@
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.1.2/custom-elements.min.js"></script>
 <script id="library" src="http://localhost:9000/design-system.js"></script>
 <script>
   function reloadScript(){
-    document.getElementById('library').src = ""
-    document.getElementById('library').src = "http://localhost:9000/design-system.js"
+    // window.location.reload()
   }
   setInterval(reloadScript, 1000);
 </script>
 <style>
   body {
-    font-family:"Open Sans", Roboto, "Helvetica Neue", sans-serif;
+    font-family:"Ubutnu", sans-serif;
   }
   header {
     margin: 32px 0 24px 0;
   }
 
   h1 {
+    font-family: "Quicksand", sans-serif;
     margin: 0;
     font-size: 32px;
     font-weight: bold;
@@ -54,7 +55,7 @@
     box-shadow: 0 2px 8px 0 #00000051;
   }
   .card.dark {
-    background: rgb(70, 70, 75);
+    background: #121252;
   }
   .card.code {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);

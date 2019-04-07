@@ -18,6 +18,7 @@
     "mwc"
   ],
   "exclude": [
-    "docs"
+    "docs",
+    "node_modules"
   ],
 }
