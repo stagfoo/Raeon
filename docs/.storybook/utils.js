@@ -15,7 +15,7 @@ export function bindEvent(tag, type){
 export function toggle(check, attr) {
   return check ? attr : '';
 }
-export function exampleFrame({title, tag, cardClass}){
+export function exampleFrame({figma, title, tag, cardClass}){
   const codeExample = html`<div>${tag}</div>`.innerHTML;
   const codeBlock = html`<code>${codeExample}</code>`
   window['hljs'].highlightBlock(codeBlock);
@@ -30,6 +30,9 @@ export function exampleFrame({title, tag, cardClass}){
     </div>
   <div class="card code">
     ${codeBlock}
+  </div>
+  <div class="card">
+  <iframe style="border: none;" width="800" height="450" src="${figma}" allowfullscreen></iframe>
   </div>
   `
 }
