@@ -1,6 +1,12 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.1.2/custom-elements.min.js"></script>
-<script src="http://localhost:9000/design-system.js"></script>
-
+<script id="library" src="http://localhost:9000/design-system.js"></script>
+<script>
+  function reloadScript(){
+    document.getElementById('library').src = ""
+    document.getElementById('library').src = "http://localhost:9000/design-system.js"
+  }
+  setInterval(reloadScript, 1000);
+</script>
 <style>
   body {
     font-family:"Open Sans", Roboto, "Helvetica Neue", sans-serif;

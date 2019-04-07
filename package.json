@@ -4,9 +4,11 @@
   "description": "",
   "main": "src/registry.ts",
   "scripts": {
-    "start": "webpack-dev-server --content-base dist --hot --inline --mode development",
+    "postinstall": "npm run install:storybook",
+    "start": "concurrently \"npm run start:lib\" \"npm run start:storybook\"",
     "get-theme": "figma-theme FpKGFJhA3XsT0GNMVzA0Ywww --out-dir src",
-    "build": "webpack --config webpack.config.js --mode production",
+    "build:lib": "webpack --config webpack.config.js --mode production",
+    "start:lib": "webpack-dev-server --content-base dist --hot --inline --mode development",
     "start:storybook": "cd docs; npm run start",
     "install:storybook": "cd docs; npm install",
     "build:storybook": "cd docs; npm run build",
@@ -16,9 +18,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^11.13.0",
     "awesome-typescript-loader": "^5.2.1",
+    "concurrently": "^4.1.0",
     "lit-element": "^2.1.0",
-    "lit-html": "^1.0.0"
+    "lit-html": "^1.0.0",
+    "storybook": "^1.0.0"
   },
   "devDependencies": {
     "color": "^3.0.0",
