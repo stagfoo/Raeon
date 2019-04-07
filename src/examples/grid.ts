@@ -6,4 +6,8 @@ export const container = new Fairybread({render:'raw'}).css`
    ${grid('container')};
   }
 `;
-
+export const columns = new Fairybread({render: 'raw'}).css`
+  .col-1-sm {
+    ${grid('')}
+  }
+ `

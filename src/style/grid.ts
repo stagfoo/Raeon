@@ -24,17 +24,17 @@ export function grid(type){
   switch (type) {
     case 'container':
       return container('auto');
-    case 'col-1-sm':
+    case 'col-1':
       gv = [12,11,12];
       break;
-    case 'col-2-sm':
+    case 'col-2':
       gv = [6,10,12];
       break;
-    case 'col-3-sm':
+    case 'col-3':
       gv = [4,9,12];
-    case 'col-4-sm':
+    case 'col-4':
       gv = [3,8,12];
-    case 'col-4-sm':
+    case 'col-4 ':
       gv = [3,8,12];
     case 'col-5-sm':
       gv = [(12/5),7,12];
